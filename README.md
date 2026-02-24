@@ -1,47 +1,42 @@
-Capstone PCAP Analyzer
-Network Traffic Forensics Using PCAP Analysis
- Overview
+#  Capstone PCAP Analyzer  
+## **Network Traffic Forensics Using PCAP Analysis**
 
-Capstone PCAP Analyzer is a forensic analysis platform designed to analyze offline PCAP (packet capture) files and identify suspicious or malicious network activity.
+---
 
-The system enables investigators to:
+##  Overview
 
-Analyze captured network traffic
+**Capstone PCAP Analyzer** is a forensic analysis platform designed to analyze offline PCAP (packet capture) files and identify suspicious or malicious network activity.
 
-Filter traffic by IP address, port, and protocol
+The system allows investigators to:
 
-Reconstruct network event timelines
+- Load and inspect PCAP files  
+- Filter traffic by **IP address, port, and protocol**  
+- Reconstruct network timelines  
+- Extract forensic artifacts  
+- Generate formal forensic reports  
 
-Extract forensic artifacts
+This project was developed for the **CS499 Capstone Experience**.
 
-Generate formal forensic investigation reports
+---
 
-This project was developed for the CS499 Capstone Experience.
+##  Features
 
- Features
+- PCAP file upload and validation  
+- Packet filtering (**IP, port, protocol**)  
+- Protocol analysis: **TCP, UDP, HTTP, DNS**  
+- Timeline reconstruction  
+- Artifact extraction  
+- Forensic report generation (**CSV / PDF**)  
+- User authentication with role-based access  
 
-PCAP file upload and validation
+---
 
-Packet filtering (IP, port, protocol)
+##  Technologies Used
 
-Protocol analysis: TCP, UDP, HTTP, DNS
+- **Python**
+- **Flask**
+- **SQLite**
+- **PyShark**
+- **HTML / Jinja Templates**
 
-Timeline reconstruction
-
-Artifact extraction
-
-Forensic report generation (CSV / PDF)
-
-User authentication with role-based access
-
- Technologies Used
-
-Python
-
-Flask
-
-SQLite
-
-PyShark
-
-HTML / Jinja Templates
+---
