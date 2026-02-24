@@ -1,0 +1,56 @@
+<div style="text-align:right;">
+    Logged in as {{ current_user.username }}
+    | <a href="/logout">Logout</a>
+</div>
+<hr>
+
+
+
+<h2>Packet Dashboard</h2>
+
+
+
+<br><br>
+<a href="/timeline">View Timeline</a><br>
+<a href="/alerts">View Alerts</a><br>
+<a href="/generate_report">Generate CSV Report</a>
+
+
+
+
+
+<form method="GET">
+    <input type="text" name="ip" placeholder="Filter by IP">
+    <input type="text" name="protocol" placeholder="Filter by Protocol (TCP, DNS, HTTP)">
+    <button type="submit">Filter</button>
+</form>
+
+
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Timestamp</th>
+    <th>Src IP</th>
+    <th>Dst IP</th>
+    <th>Protocol</th>
+    <th>Src Port</th>
+    <th>Dst Port</th>
+    <th>Length</th>
+</tr>
+
+{% for p in packets %}
+<tr>
+    <td>{{ p[0] }}</td>
+    <td>{{ p[1] }}</td>
+    <td>{{ p[2] }}</td>
+    <td>{{ p[3] }}</td>
+    <td>{{ p[4] }}</td>
+    <td>{{ p[5] }}</td>
+    <td>{{ p[6] }}</td>
+    <td>{{ p[7] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<br>
+<a href="/generate_report">Generate CSV Report</a>

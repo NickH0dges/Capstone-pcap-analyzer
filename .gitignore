@@ -1,0 +1,20 @@
+# Virtual env
+venv/
+.venv/
+
+# IDE
+.idea/
+
+# Database
+*.db
+*.sqlite3
+
+# PCAP evidence
+*.pcap
+
+# Reports
+reports/
+uploads/
+
+# Logs
+*.log

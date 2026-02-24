@@ -1,0 +1,21 @@
+<h2>Event Timeline</h2>
+
+<table border="1">
+<tr>
+    <th>Timestamp</th>
+    <th>Src IP</th>
+    <th>Dst IP</th>
+    <th>Protocol</th>
+    <th>Length</th>
+</tr>
+
+{% for e in events %}
+<tr>
+    <td>{{ e[0] }}</td>
+    <td>{{ e[1] }}</td>
+    <td>{{ e[2] }}</td>
+    <td>{{ e[3] }}</td>
+    <td>{{ e[4] }}</td>
+</tr>
+{% endfor %}
+</table>
