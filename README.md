@@ -26,7 +26,7 @@ This project was developed for the **CS499 Capstone Experience**.
 - Protocol analysis: **TCP, UDP, HTTP, DNS**  
 - Timeline reconstruction  
 - Artifact extraction  
-- Forensic report generation (**CSV / PDF**)  
+- Forensic report generation (CSV)  
 - User authentication with role-based access  
 
 ---
